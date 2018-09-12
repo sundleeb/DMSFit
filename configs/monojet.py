@@ -48,6 +48,23 @@ for s in ['0tag','1tag', '2tag']:
 		  ,"QCD_signal_"+s		       :['signal'+s,'qcd',1,0]
 		  ,"Data_signal_"+s	       :['signal'+s,'data',0,0]
 		  # signals
+                  ,"hsDM_1000_50_100_signal"+s    :['signal'+s,'hsDM-1000-50-100_signal',1,1]
+                  ,"hsDM_1000_50_200_signal"+s    :['signal'+s,'hsDM-1000-50-200_signal',1,1]
+                  ,"hsDM_1000_50_250_signal"+s    :['signal'+s,'hsDM-1000-50-250_signal',1,1]
+                  ,"hsDM_1000_50_300_signal"+s    :['signal'+s,'hsDM-1000-50-300_signal',1,1]
+
+                  ,"ZpDM_1000_150_10_signal"+s    :['signal'+s,'ZpDM-1000-150-10_signal',1,1]
+                  ,"ZpDM_1000_50_10_signal"+s    :['signal'+s,'ZpDM-1000-50-10_signal',1,1]
+                  ,"ZpDM_100_150_10_signal"+s    :['signal'+s,'ZpDM-100-150-10_signal',1,1]
+                  ,"ZpDM_100_50_10_signal"+s    :['signal'+s,'ZpDM-100-50-10_signal',1,1]
+                  ,"ZpDM_1500_150_10_signal"+s    :['signal'+s,'ZpDM-1500-150-10_signal',1,1]
+                  ,"ZpDM_1500_50_10_signal"+s    :['signal'+s,'ZpDM-1500-50-10_signal',1,1]
+                  ,"ZpDM_2000_150_10_signal"+s    :['signal'+s,'ZpDM-2000-150-10_signal',1,1]
+                  ,"ZpDM_2000_50_10_signal"+s    :['signal'+s,'ZpDM-2000-50-10_signal',1,1]
+                  ,"ZpDM_2500_150_10_signal"+s    :['signal'+s,'ZpDM-2500-150-10_signal',1,1]
+                  ,"ZpDM_3000_150_10_signal"+s    :['signal'+s,'ZpDM-3000-150-10_signal',1,1]
+                  ,"ZpDM_3000_50_10_signal"+s    :['signal'+s,'ZpDM-3000-50-10_signal',1,1]
+                  ,"ZpDM_300_150_10_signal"+s    :['signal'+s,'ZpDM-300-150-10_signal',1,1]
 
 		  # Di muon-Control
 #                  ,"VH_zmm_"+s                    :['dimuon'+s,'vh',1,0] 
