@@ -1,0 +1,6 @@
+med hs dm twosigdown onesigdown exp onesigup twosigup
+BBbarDM_MZprime-1000_Mhs-50_Mchi-100 .3777000 .4861000 .6445000 .8578000 1.1032000
+BBbarDM_MZprime-1000_Mhs-90_Mchi-100     
+BBbarDM_MZprime-2000_Mhs-50_Mchi-100 .0376000 .0491000 .0665000 .0903000 .1178000
+BBbarDM_MZprime-2000_Mhs-90_Mchi-100     
+BBbarDM_MZprime-500_Mhs-50_Mchi-100     

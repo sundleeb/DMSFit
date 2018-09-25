@@ -1,14 +1,14 @@
-Control Region Datacard -- boosted_mass1_singlemuontop_fail_control.txt
+Control Region Datacard -- boosted_doublebp_mass1_singlemuontop_fail_control.txt
 
 imax * number of bins
 jmax * number of processes minus 1
 kmax * number of nuisance parameters
 
 -------------------------------------------------------------------------------------------------
-shapes *         tmn_fail  ../../../combined_model.root combinedws:boosted_mass1_fail_singlemuontop_$PROCESS combinedws:boosted_mass1_fail_singlemuontop_$PROCESS_$SYSTEMATIC
-shapes data_obs  tmn_fail  ../../../combined_model.root combinedws:boosted_mass1_fail_singlemuontop_data
-shapes ttbar     tmn_fail  ../../../combined_model.root combinedws:boosted_mass1_fail_singlemuontopModel_ttbar_model
-#shapes wjets     tmn_fail  ../../../combined_model.root combinedws:boosted_mass1_fail_singlemuontopwModel_wjets_model
+shapes *         tmn_fail  ./../../combined_model_boosted.root combinedws:boosted_doublebf_mass1_singlemuontop_$PROCESS combinedws:boosted_doublebf_mass1_singlemuontop_$PROCESS_$SYSTEMATIC
+shapes data_obs  tmn_fail  ./../../combined_model_boosted.root combinedws:boosted_doublebf_mass1_singlemuontop_data
+shapes ttbar     tmn_fail  ./../../combined_model_boosted.root combinedws:boosted_doublebf_mass1_singlemuontopModel_ttbar_model
+#shapes wjets     tmn_fail  ./../../combined_model_boosted.root combinedws:boosted_doublebf_mass1_singlemuontopwModel_wjets_model
 -------------------------------------------------------------------------------------------------
 bin 	     tmn_fail
 observation  -1 
@@ -38,13 +38,13 @@ ttbarfailmuon rateParam tmn_fail ttbar ((1.0-@0*@1)/(1.0-@1)) ttbareffSF,ttbaref
 mass1_wjetseff param 0.0316 0.001264
 mass1_wlneffSF  extArg 1.0 [0.0,10.0]
 wlnfailmuon_2 rateParam tmn_fail wjets ((1.0-@0*@1)/(1.0-@1)) mass1_wlneffSF,mass1_wjetseff
-boosted_mass1_stat_error_singlemuontopfailModelCR_bin0 param 0.0 1
-boosted_mass1_stat_error_singlemuontopfailModelCR_bin1 param 0.0 1
-boosted_mass1_stat_error_singlemuontopfailModelCR_bin2 param 0.0 1
-boosted_mass1_stat_error_singlemuontopfailModelCR_bin3 param 0.0 1
-#boosted_mass1_stat_error_singlemuontopwfailModelCR_bin0 param 0.0 1
-#boosted_mass1_stat_error_singlemuontopwfailModelCR_bin1 param 0.0 1
-#boosted_mass1_stat_error_singlemuontopwfailModelCR_bin2 param 0.0 1
-#boosted_mass1_stat_error_singlemuontopwfailModelCR_bin3 param 0.0 1
+boosted_doublebp_mass1_stat_error_singlemuontopfailModelCR_bin0 param 0.0 1
+boosted_doublebp_mass1_stat_error_singlemuontopfailModelCR_bin1 param 0.0 1
+boosted_doublebp_mass1_stat_error_singlemuontopfailModelCR_bin2 param 0.0 1
+boosted_doublebp_mass1_stat_error_singlemuontopfailModelCR_bin3 param 0.0 1
+#boosted_doublebp_mass1_stat_error_singlemuontopwfailModelCR_bin0 param 0.0 1
+#boosted_doublebp_mass1_stat_error_singlemuontopwfailModelCR_bin1 param 0.0 1
+#boosted_doublebp_mass1_stat_error_singlemuontopwfailModelCR_bin2 param 0.0 1
+#boosted_doublebp_mass1_stat_error_singlemuontopwfailModelCR_bin3 param 0.0 1
 btag param 0.0 1
 mistag param 0.0 1

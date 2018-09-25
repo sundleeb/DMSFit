@@ -1,14 +1,14 @@
-Control Region Datacard -- boosted_mass3_singlemuonw_fail_control.txt
+Control Region Datacard -- boosted_doublebp_mass3_singlemuonw_fail_control.txt
 
 imax * number of bins
 jmax * number of processes minus 1
 kmax * number of nuisance parameters
 
 -------------------------------------------------------------------------------------------------
-shapes *         wmn_fail  ../../../combined_model.root combinedws:boosted_mass3_fail_singlemuonw_$PROCESS combinedws:boosted_mass3_fail_singlemuonw_$PROCESS_$SYSTEMATIC
-shapes data_obs  wmn_fail  ../../../combined_model.root combinedws:boosted_mass3_fail_singlemuonw_data
-shapes wjets     wmn_fail  ../../../combined_model.root combinedws:boosted_mass3_fail_singlemuonwModel_wjets_model
-#shapes ttbar     wmn_fail  ../../../combined_model.root combinedws:boosted_mass3_fail_singlemuonwtopModel_ttbar_model
+shapes *         wmn_fail  ./../../combined_model_boosted.root combinedws:boosted_doublebf_mass3_singlemuonw_$PROCESS combinedws:boosted_doublebf_mass3_singlemuonw_$PROCESS_$SYSTEMATIC
+shapes data_obs  wmn_fail  ./../../combined_model_boosted.root combinedws:boosted_doublebf_mass3_singlemuonw_data
+shapes wjets     wmn_fail  ./../../combined_model_boosted.root combinedws:boosted_doublebf_mass3_singlemuonwModel_wjets_model
+#shapes ttbar     wmn_fail  ./../../combined_model_boosted.root combinedws:boosted_doublebf_mass3_singlemuonwtopModel_ttbar_model
 -------------------------------------------------------------------------------------------------
 bin 	     wmn_fail
 observation  -1 
@@ -38,13 +38,13 @@ wlnfailmuon rateParam wmn_fail wjets ((1.0-@0*@1)/(1.0-@1)) mass3_wlneffSF,mass3
 ttbareff param 0.1678 0.0001
 ttbareffSF  extArg 1.03 [0.96,1.1]
 ttbarfailmuon_2 rateParam wmn_fail ttbar ((1.0-@0*@1)/(1.0-@1)) ttbareffSF,ttbareff
-boosted_mass3_stat_error_singlemuonwfailModel_bin0 param 0.0 1
-boosted_mass3_stat_error_singlemuonwfailModel_bin1 param 0.0 1
-boosted_mass3_stat_error_singlemuonwfailModel_bin2 param 0.0 1
-boosted_mass3_stat_error_singlemuonwfailModel_bin3 param 0.0 1
-#boosted_mass3_stat_error_singlemuonwtopfailModel_bin0 param 0.0 1
-#boosted_mass3_stat_error_singlemuonwtopfailModel_bin1 param 0.0 1
-#boosted_mass3_stat_error_singlemuonwtopfailModel_bin2 param 0.0 1
-#boosted_mass3_stat_error_singlemuonwtopfailModel_bin3 param 0.0 1
+boosted_doublebp_mass3_stat_error_singlemuonwfailModel_bin0 param 0.0 1
+boosted_doublebp_mass3_stat_error_singlemuonwfailModel_bin1 param 0.0 1
+boosted_doublebp_mass3_stat_error_singlemuonwfailModel_bin2 param 0.0 1
+boosted_doublebp_mass3_stat_error_singlemuonwfailModel_bin3 param 0.0 1
+#boosted_doublebp_mass3_stat_error_singlemuonwtopfailModel_bin0 param 0.0 1
+#boosted_doublebp_mass3_stat_error_singlemuonwtopfailModel_bin1 param 0.0 1
+#boosted_doublebp_mass3_stat_error_singlemuonwtopfailModel_bin2 param 0.0 1
+#boosted_doublebp_mass3_stat_error_singlemuonwtopfailModel_bin3 param 0.0 1
 btag param 0.0 1
 mistag param 0.0 1

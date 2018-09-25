@@ -1,0 +1,6 @@
+med hs dm twosigdown onesigdown exp onesigup twosigup
+DiJetsDM_MZprime-1000_Mhs-150_Mchi-10 1.0567000 1.3202000 1.6699000 2.1026000 2.5326000
+DiJetsDM_MZprime-2000_Mhs-50_Mchi-10     
+DiJetsDM_MZprime-300_Mhs-50_Mchi-10 9.9668000 12.3162000 15.7500000 20.2074000 25.0741000
+DiJetsDM_MZprime-500_Mhs-50_Mchi-10     
+DiJetsDM_MZprime-1000_Mhs-50_Mchi-10     

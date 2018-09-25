@@ -379,7 +379,7 @@ void ModelBuilder::addSample(std::string name, std::string region, std::string p
 	const char *brname = br->GetName();
 	if ( std::strcmp(brname,weightname.c_str())!=0 && std::strcmp(brname,varstring.c_str())!=0 ){
 	  RooRealVar *vartmp = new RooRealVar(brname,brname,0,1); vartmp->removeRange();
-	  std::cout << "Adding variable" << vartmp->GetName() <<  std::endl;
+	  std::cout << "Adding variable " << vartmp->GetName() <<  std::endl;
 	  treevariables.add(*vartmp);
 	}
    }

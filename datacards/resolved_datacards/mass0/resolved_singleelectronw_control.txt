@@ -1,14 +1,14 @@
-Control Region Datacard -- resolved_mass0_singleelectronw_control.txt
+Control Region Datacard -- resolved_pass_mass0_singleelectronw_control.txt
 
 imax * number of bins
 jmax * number of processes minus 1
 kmax * number of nuisance parameters
 
 -------------------------------------------------------------------------------------------------
-shapes *         wen       ../../../combined_model.root combinedws:resolved_mass0_singleelectronw_$PROCESS combinedws:resolved_mass0_singleelectronw_$PROCESS_$SYSTEMATIC
-shapes data_obs  wen       ../../../combined_model.root combinedws:resolved_mass0_singleelectronw_data
-shapes wjets     wen       ../../../combined_model.root combinedws:resolved_mass0_singleelectronwModel_wjets_model
-#shapes ttbar     wen       ../../../combined_model.root combinedws:resolved_mass0_singleelectronwtopModel_ttbar_model
+shapes *         wen       ../../combined_model_resolved.root combinedws:resolved_pass_mass0_singleelectronw_$PROCESS combinedws:resolved_pass_mass0_singleelectronw_$PROCESS_$SYSTEMATIC
+shapes data_obs  wen       ../../combined_model_resolved.root combinedws:resolved_pass_mass0_singleelectronw_data
+shapes wjets     wen       ../../combined_model_resolved.root combinedws:resolved_pass_mass0_singleelectronwModel_wjets_model
+#shapes ttbar     wen       ../../combined_model_resolved.root combinedws:resolved_pass_mass0_singleelectronwtopModel_ttbar_model
 -------------------------------------------------------------------------------------------------
 bin 	     wen
 observation  -1 
@@ -32,19 +32,13 @@ met        lnN		1.05      1.05      1.05      1.05      1.05      1.05
 track_ele  lnN		1.005     1.005     1.005     1.005     1.005     1.005
 -------------------------------------------------------------------------------------------------
 # Parametric uncertainties associated to control regions fits
-mass0_wjetseff param 0.0316 0.001264
-mass0_wlneffSF  extArg 1.0 [0.0,10.0]
-wlnpasselectron rateParam wen wjets (@0*1.0) mass0_wlneffSF
-ttbareff param 0.1678 0.0001
-ttbareffSF  extArg 1.03 [0.96,1.1]
-ttbarpasselectron_2 rateParam wen ttbar (@0*1.0) ttbareffSF
-resolved_mass0_stat_error_singleelectronwModel_bin0 param 0.0 1
-resolved_mass0_stat_error_singleelectronwModel_bin1 param 0.0 1
-resolved_mass0_stat_error_singleelectronwModel_bin2 param 0.0 1
-resolved_mass0_stat_error_singleelectronwModel_bin3 param 0.0 1
-#resolved_mass0_stat_error_singleelectronwtopModel_bin0 param 0.0 1
-#resolved_mass0_stat_error_singleelectronwtopModel_bin1 param 0.0 1
-#resolved_mass0_stat_error_singleelectronwtopModel_bin2 param 0.0 1
-#resolved_mass0_stat_error_singleelectronwtopModel_bin3 param 0.0 1
+resolved_pass_mass0_stat_error_singleelectronwModel_bin0 param 0.0 1
+resolved_pass_mass0_stat_error_singleelectronwModel_bin1 param 0.0 1
+resolved_pass_mass0_stat_error_singleelectronwModel_bin2 param 0.0 1
+resolved_pass_mass0_stat_error_singleelectronwModel_bin3 param 0.0 1
+#resolved_pass_mass0_stat_error_singleelectronwtopModel_bin0 param 0.0 1
+#resolved_pass_mass0_stat_error_singleelectronwtopModel_bin1 param 0.0 1
+#resolved_pass_mass0_stat_error_singleelectronwtopModel_bin2 param 0.0 1
+#resolved_pass_mass0_stat_error_singleelectronwtopModel_bin3 param 0.0 1
 btag param 0.0 1
 mistag param 0.0 1

@@ -1,16 +1,16 @@
-Control Region Datacard -- resolved_mass0 signal_fail.txt
+Control Region Datacard -- resolved_pass_mass0 signal_fail.txt
 
 imax * number of bins
 jmax * number of processes minus 1
 kmax * number of nuisance parameters
 
 -------------------------------------------------------------------------------------------------
-shapes *         sig_fail  ../../../combined_model.root combinedws:resolved_mass0_fail_signal_$PROCESS combinedws:resolved_mass0_fail_signal_$PROCESS_$SYSTEMATIC
-shapes data_obs  sig_fail  ../../../combined_model.root combinedws:resolved_mass0_fail_signal_data
-shapes signal    sig_fail  ../../../combined_model.root combinedws:resolved_mass0_fail_signal_XX-SIGNAL-XX_signal combinedws:resolved_mass0_fail_signal_XX-SIGNAL-XX_signal_$SYSTEMATIC
-shapes zvv       sig_fail  ../../../combined_model.root combinedws:resolved_mass0_fail_signal_zjets_model
-shapes wjets     sig_fail  ../../../combined_model.root combinedws:resolved_mass0_fail_signal_wjets_model
-shapes ttbar     sig_fail  ../../../combined_model.root combinedws:resolved_mass0_fail_signal_ttbar_model
+shapes *         sig_fail  ../../combined_model_resolved.root combinedws:resolved_fail_mass0_signal_$PROCESS combinedws:resolved_fail_mass0_signal_$PROCESS_$SYSTEMATIC
+shapes data_obs  sig_fail  ../../combined_model_resolved.root combinedws:resolved_fail_mass0_signal_data
+shapes signal    sig_fail  ../../combined_model_resolved.root combinedws:resolved_fail_mass0_signal_XX-SIGNAL-XX_signal combinedws:resolved_fail_mass0_signal_XX-SIGNAL-XX_signal_$SYSTEMATIC
+shapes zvv       sig_fail  ../../combined_model_resolved.root combinedws:resolved_fail_mass0_signal_zjets_model
+shapes wjets     sig_fail  ../../combined_model_resolved.root combinedws:resolved_fail_mass0_signal_wjets_model
+shapes ttbar     sig_fail  ../../combined_model_resolved.root combinedws:resolved_fail_mass0_signal_ttbar_model
 -------------------------------------------------------------------------------------------------
 bin 	     sig_fail
 observation  -1 
@@ -32,14 +32,5 @@ met             lnN     1.05      1.05           1.05      1.05      1.05      1
 trig_met        lnN     1.01      1.01           1.01      -         1.01      -         -
 -------------------------------------------------------------------------------------------------
 # Parametric uncertainties associated to control regions fits
-mass0_zjetseff param 0.0346 0.00174
-mass0_zlleffSF  extArg 1.0 [0.0,10.0]
-zvvfailsignal rateParam sig_fail zvv ((1.0-@0*@1)/(1.0-@1)) mass0_zlleffSF,mass0_zjetseff
-mass0_wjetseff param 0.0316 0.001264
-mass0_wlneffSF  extArg 1.0 [0.0,10.0]
-wlnfailsignal rateParam sig_fail wjets ((1.0-@0*@1)/(1.0-@1)) mass0_wlneffSF,mass0_wjetseff
-ttbareff param 0.1678 0.0001
-ttbareffSF  extArg 1.03 [0.96,1.1]
-ttbarfailsig rateParam sig_fail ttbar ((1.0-@0*@1)/(1.0-@1)) ttbareffSF,ttbareff
 btag param 0.0 1
 mistag param 0.0 1

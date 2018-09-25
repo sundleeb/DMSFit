@@ -1,16 +1,16 @@
-Control Region Datacard -- boosted_mass2 signal_fail.txt
+Control Region Datacard -- boosted_doublebp_mass2 signal_fail.txt
 
 imax * number of bins
 jmax * number of processes minus 1
 kmax * number of nuisance parameters
 
 -------------------------------------------------------------------------------------------------
-shapes *         sig_fail  ../../../combined_model.root combinedws:boosted_mass2_fail_signal_$PROCESS combinedws:boosted_mass2_fail_signal_$PROCESS_$SYSTEMATIC
-shapes data_obs  sig_fail  ../../../combined_model.root combinedws:boosted_mass2_fail_signal_data
-shapes signal    sig_fail  ../../../combined_model.root combinedws:boosted_mass2_fail_signal_XX-SIGNAL-XX_signal combinedws:boosted_mass2_fail_signal_XX-SIGNAL-XX_signal_$SYSTEMATIC
-shapes zvv       sig_fail  ../../../combined_model.root combinedws:boosted_mass2_fail_signal_zjets_model
-shapes wjets     sig_fail  ../../../combined_model.root combinedws:boosted_mass2_fail_signal_wjets_model
-shapes ttbar     sig_fail  ../../../combined_model.root combinedws:boosted_mass2_fail_signal_ttbar_model
+shapes *         sig_fail  ./../../combined_model_boosted.root combinedws:boosted_doublebf_mass2_signal_$PROCESS combinedws:boosted_doublebf_mass2_signal_$PROCESS_$SYSTEMATIC
+shapes data_obs  sig_fail  ./../../combined_model_boosted.root combinedws:boosted_doublebf_mass2_signal_data
+shapes signal    sig_fail  ./../../combined_model_boosted.root combinedws:boosted_doublebf_mass2_signal_XX-SIGNAL-XX_signal combinedws:boosted_doublebf_mass2_signal_XX-SIGNAL-XX_signal_$SYSTEMATIC
+shapes zvv       sig_fail  ./../../combined_model_boosted.root combinedws:boosted_doublebf_mass2_signal_zjets_model
+shapes wjets     sig_fail  ./../../combined_model_boosted.root combinedws:boosted_doublebf_mass2_signal_wjets_model
+shapes ttbar     sig_fail  ./../../combined_model_boosted.root combinedws:boosted_doublebf_mass2_signal_ttbar_model
 -------------------------------------------------------------------------------------------------
 bin 	     sig_fail
 observation  -1 

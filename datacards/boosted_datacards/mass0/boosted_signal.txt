@@ -1,16 +1,16 @@
-Control Region Datacard -- boosted_mass0 signal.txt
+Control Region Datacard -- boosted_doublebp_mass0 signal.txt
 
 imax * number of bins
 jmax * number of processes minus 1
 kmax * number of nuisance parameters
 
 -------------------------------------------------------------------------------------------------
-shapes *         sig       ../../../combined_model.root combinedws:boosted_mass0_signal_$PROCESS combinedws:boosted_mass0_signal_$PROCESS_$SYSTEMATIC
-shapes data_obs  sig       ../../../combined_model.root combinedws:boosted_mass0_signal_data
-shapes signal    sig       ../../../combined_model.root combinedws:boosted_mass0_signal_XX-SIGNAL-XX_signal combinedws:boosted_mass0_signal_XX-SIGNAL-XX_signal_$SYSTEMATIC
-shapes ttbar     sig       ../../../combined_model.root combinedws:boosted_mass0_signal_ttbar_model
-shapes wjets     sig       ../../../combined_model.root combinedws:boosted_mass0_signal_wjets_model
-shapes zvv       sig       ../../../combined_model.root combinedws:boosted_mass0_signal_zjets_model
+shapes *         sig       ./../../combined_model_boosted.root combinedws:boosted_doublebp_mass0_signal_$PROCESS combinedws:boosted_doublebp_mass0_signal_$PROCESS_$SYSTEMATIC
+shapes data_obs  sig       ./../../combined_model_boosted.root combinedws:boosted_doublebp_mass0_signal_data
+shapes signal    sig       ./../../combined_model_boosted.root combinedws:boosted_doublebp_mass0_signal_XX-SIGNAL-XX_signal combinedws:boosted_doublebp_mass0_signal_XX-SIGNAL-XX_signal_$SYSTEMATIC
+shapes ttbar     sig       ./../../combined_model_boosted.root combinedws:boosted_doublebp_mass0_signal_ttbar_model
+shapes wjets     sig       ./../../combined_model_boosted.root combinedws:boosted_doublebp_mass0_signal_wjets_model
+shapes zvv       sig       ./../../combined_model_boosted.root combinedws:boosted_doublebp_mass0_signal_zjets_model
 -------------------------------------------------------------------------------------------------
 bin 	     sig
 observation  -1 
