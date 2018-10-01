@@ -28,7 +28,7 @@ for s in ['0tag','1tag', '2tag']:
         'name':"monojet_"+s
         #,'in_file_name':"/uscms_data/d1/shoh/panda/v_8029_DarkHiggs_v2/flat/limits/fittingForest_monojet_"+s+".root"
        # ,'in_file_name':"/uscms/home/naina25/nobackup/Panda_2018/Panda_Analysis/CMSSW_8_0_29/src/PandaAnalysis/SuperMonoJet/fitting/fittingForest_monojet_"+s+".root"
-        ,'in_file_name':"/uscms_data/d3/naina25/panda/80X-v1.5-monojet/fittingForest_"+s+".root"
+        ,'in_file_name':"/uscms/home/naina25/nobackup/Panda_2018/Panda_Analysis/CMSSW_8_0_29/src/PandaAnalysis/SuperMonoJet/fitting/monojet/fittingForest_"+s+".root"
         ,"cutstring":""
         ,"varstring":["min(999.9999,met)",250,1250]
         ,"weightname":"weight"
@@ -40,31 +40,29 @@ for s in ['0tag','1tag', '2tag']:
 		  # Signal Region
 #		   "VH_signal_"+s    	       :['signal'+s,'vh',1,0]
 		  "Zvv_signal_"+s    	       :['signal'+s,'zjets',1,0]
-                  ,"Zll_signal_"+s	               :['signal'+s,'zll',1,0]
+                  ,"Zll_signal_"+s	       :['signal'+s,'zll',1,0]
  		  ,"Wlv_signal_"+s  	       :['signal'+s,'wjets',1,0]
-		  ,"Diboson_signal_"+s  	       :['signal'+s,'dibosons',1,0]
+		  ,"Diboson_signal_"+s         :['signal'+s,'dibosons',1,0]
 		  ,"ttbar_signal_"+s   	       :['signal'+s,'ttbar',1,0]
-		  ,"ST_signal_"+s                 :['signal'+s,'stop',1,0]
-		  ,"QCD_signal_"+s		       :['signal'+s,'qcd',1,0]
+		  ,"ST_signal_"+s              :['signal'+s,'stop',1,0]
+		  ,"QCD_signal_"+s             :['signal'+s,'qcd',1,0]
 		  ,"Data_signal_"+s	       :['signal'+s,'data',0,0]
 		  # signals
-                  ,"hsDM_1000_50_100_signal"+s    :['signal'+s,'hsDM-1000-50-100_signal',1,1]
-                  ,"hsDM_1000_50_200_signal"+s    :['signal'+s,'hsDM-1000-50-200_signal',1,1]
-                  ,"hsDM_1000_50_250_signal"+s    :['signal'+s,'hsDM-1000-50-250_signal',1,1]
-                  ,"hsDM_1000_50_300_signal"+s    :['signal'+s,'hsDM-1000-50-300_signal',1,1]
-
-                  ,"ZpDM_1000_150_10_signal"+s    :['signal'+s,'ZpDM-1000-150-10_signal',1,1]
-                  ,"ZpDM_1000_50_10_signal"+s    :['signal'+s,'ZpDM-1000-50-10_signal',1,1]
-                  ,"ZpDM_100_150_10_signal"+s    :['signal'+s,'ZpDM-100-150-10_signal',1,1]
-                  ,"ZpDM_100_50_10_signal"+s    :['signal'+s,'ZpDM-100-50-10_signal',1,1]
-                  ,"ZpDM_1500_150_10_signal"+s    :['signal'+s,'ZpDM-1500-150-10_signal',1,1]
-                  ,"ZpDM_1500_50_10_signal"+s    :['signal'+s,'ZpDM-1500-50-10_signal',1,1]
-                  ,"ZpDM_2000_150_10_signal"+s    :['signal'+s,'ZpDM-2000-150-10_signal',1,1]
-                  ,"ZpDM_2000_50_10_signal"+s    :['signal'+s,'ZpDM-2000-50-10_signal',1,1]
-                  ,"ZpDM_2500_150_10_signal"+s    :['signal'+s,'ZpDM-2500-150-10_signal',1,1]
-                  ,"ZpDM_3000_150_10_signal"+s    :['signal'+s,'ZpDM-3000-150-10_signal',1,1]
-                  ,"ZpDM_3000_50_10_signal"+s    :['signal'+s,'ZpDM-3000-50-10_signal',1,1]
-                  ,"ZpDM_300_150_10_signal"+s    :['signal'+s,'ZpDM-300-150-10_signal',1,1]
+                  ,"hsDM_1000_50_100_signal_"+s    :['signal'+s,'hsDM-1000-50-100_signal',1,1]
+                  ,"hsDM_1000_50_200_signal_"+s    :['signal'+s,'hsDM-1000-50-200_signal',1,1]
+                  ,"hsDM_1000_50_250_signal_"+s    :['signal'+s,'hsDM-1000-50-250_signal',1,1]
+                  ,"ZpDM_1000_150_10_signal_"+s    :['signal'+s,'ZpDM-1000-150-10_signal',1,1]
+                  ,"ZpDM_1000_50_10_signal_"+s    :['signal'+s,'ZpDM-1000-50-10_signal',1,1]
+                  ,"ZpDM_100_150_10_signal_"+s    :['signal'+s,'ZpDM-100-150-10_signal',1,1]
+                  ,"ZpDM_100_50_10_signal_"+s    :['signal'+s,'ZpDM-100-50-10_signal',1,1]
+                  ,"ZpDM_1500_150_10_signal_"+s    :['signal'+s,'ZpDM-1500-150-10_signal',1,1]
+                  ,"ZpDM_1500_50_10_signal_"+s    :['signal'+s,'ZpDM-1500-50-10_signal',1,1]
+                  ,"ZpDM_2000_150_10_signal_"+s    :['signal'+s,'ZpDM-2000-150-10_signal',1,1]
+                  ,"ZpDM_2000_50_10_signal_"+s    :['signal'+s,'ZpDM-2000-50-10_signal',1,1]
+                  ,"ZpDM_2500_150_10_signal_"+s    :['signal'+s,'ZpDM-2500-150-10_signal',1,1]
+                  ,"ZpDM_3000_150_10_signal_"+s    :['signal'+s,'ZpDM-3000-150-10_signal',1,1]
+                  ,"ZpDM_3000_50_10_signal_"+s    :['signal'+s,'ZpDM-3000-50-10_signal',1,1]
+                  ,"ZpDM_300_150_10_signal_"+s    :['signal'+s,'ZpDM-300-150-10_signal',1,1]
 
 		  # Di muon-Control
 #                  ,"VH_zmm_"+s                    :['dimuon'+s,'vh',1,0] 
