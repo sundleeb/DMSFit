@@ -18,7 +18,7 @@
 # systematics will expect samples with sample_sys_Up/Down but will skip if not found 
 
 signals = {}
-with open('../../../CMSSW_8_0_29/src/PandaAnalysis/LPC_T3/merging/signals.txt', 'r') as signal_file:
+with open('../../../../Panda_Analysis/CMSSW_8_0_29/src/PandaAnalysis/LPC_T3/merging/signals.txt', 'r') as signal_file:
                 for line in signal_file:
                     name = line.rstrip()
                     signals[name+'_signal'] = ['signal',name+'_signal',1,1]
@@ -92,8 +92,8 @@ categories = []
 for s in ['0tag','1tag', '2tag']:
      monojet_category[s] = {
         'name':"monojet_"+s
-        ,'in_file_name':"/uscms/home/naina25/nobackup/Panda_2018/Panda_Analysis/CMSSW_8_0_29/src/PandaAnalysis/SuperMonoJet/fitting/monojet/fittingForest_"+s+".root"
-        ,"cutstring":""
+        ,'in_file_name':"/uscms_data/d3/naina25/panda/limits/fittingForest_"+s+".root"
+        ,"cutstring":"1"
         ,"varstring":["min(999.9999,met)",250,1250]
         ,"weightname":"weight"
         ,"bins":bins[:]
@@ -102,4 +102,4 @@ for s in ['0tag','1tag', '2tag']:
         ,"samples":samples_dict[s]
         }
 
-    categories.append(monojet_category[s])
+     categories.append(monojet_category[s])
