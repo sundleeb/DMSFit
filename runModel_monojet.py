@@ -3,9 +3,12 @@
 fOutName = "combined_model_monojet.root"  # --> Output file
 fName    = "monojet.root"  # --> input file (i.e output from previous)
 #fName    = "mono-x-smoothed.root"  # --> input file (i.e output from previous)
-categories = ["monojet_tag0","monojet_tag1","monojet_tag2"]
+#categories = ["monojet_0tag","monojet_1tag","monojet_2tag"]
+#categories = ["monojet_0tag","monojet_1tag"]
+categories = ["monojet_0tag"]
 #categories = ["monox_mass0","monox_mass0_fail","monox_mass1","monox_mass1_fail","monox_mass2","monox_mass2_fail","monox_mass3","monox_mass3_fail"] # --> Should be labeled as in original config 
-controlregions_def = ["Z_constraints_monojet","W_constraints_monojet","Top_constraints_monojet"] # --> configuration configs for control region fits. 
+#controlregions_def = ["Z_constraints_monojet","W_constraints_monojet_0tag","Top_constraints_monojet_0tag"] # --> configuration configs for control region fits. 
+controlregions_def = ["Z_constraints_monojet","W_constraints_monojet_0tag"] # --> configuration configs for control region fits. 
 # Note if one conrol region def depends on another (i,e if setDependant() is called) it must come AFTER its 
 # the one it depends on in this list!
 #--------------------------------------------------------------------------------------//

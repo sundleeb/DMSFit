@@ -76,20 +76,16 @@ samples = {
 
 samples.update(signals)
 samples_0tag = {}
-samples_1tag = {}
-samples_2tag = {}
 for sample in samples: 
         samples_0tag[sample+'_0tag'] = samples[sample]
-        samples_1tag[sample+'_1tag'] = samples[sample]
-        samples_2tag[sample+'_2tag'] = samples[sample]
-samples_dict = {'0tag':samples_0tag,'1tag':samples_1tag, '2tag':samples_2tag}
+samples_dict = {'0tag':samples_0tag}
 
 bins = [250.0, 280.0, 310.0, 340.0, 370.0, 400.0, 430.0, 470.0, 510.0, 550.0, 590.0, 640.0, 690.0, 740.0, 790.0, 840.0, 900.0, 960.0, 1020.0, 1090.0, 1160.0, 1250.0]
 systematics=["btag","mistag"]
 monojet_category = {}
 out_file_name = 'monojet.root'
 categories = []
-for s in ['0tag','1tag', '2tag']:
+for s in ['0tag']:
      monojet_category[s] = {
         'name':"monojet_"+s
         ,'in_file_name':"/uscms_data/d3/naina25/panda/limits/fittingForest_"+s+".root"
